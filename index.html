@@ -1,0 +1,1661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style Vibe- Style meets comfort </title>
+  <link rel="shortcut icon" href="./assets/img/logofinal.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body onload="startTime()">
+  <!-- Header section starts -->
+  <header>
+    <div class="top-nav  flex justify-around py-4">
+      <div class="logo">
+        <img src="./assets/img/logofinal2.png" alt="logo" class="h-14">
+      </div>
+      <form class="search border-indigo-600  border flex rounded-md w-5/12">
+        <input type="text" name="search" placeholder="Search for items" class="flex-1 ps-2 rounded text-sm font-normal">
+        <select name="categories" class="border-l border-indigo-600 text-sm font-normal px-2">
+          <option value="All-Categories">All Categories</option>
+          <option value="men">Mens</option>
+          <option value="women">Womens</option>
+          <option value="electronic">Electronics</option>
+        </select>
+        <button type="submit" class="bg-[#3F51B5] rounded-r">
+          <i class="ri-search-line text-white p-4"></i>
+        </button>
+      </form>
+
+      <div class="cart flex gap-6 items-center tracking-wide font-medium text-base">
+        <div>
+          <div class="dropdown">
+            <button class="dropbtn1 hover:text-indigo-600 transition-all duration-300 hover:cursor-pointer">
+              <i class="ri-user-3-line text-lg"></i>Accounts
+            </button>
+            <div class="dropdown-content mt-3 rounded">
+              <a href="javascript:void()">Register</a>
+              <a href="javascript:void()">Checkout</a>
+              <a href="javascript:void()">Login</a>
+            </div>
+          </div>
+        </div>
+        <div class="hover:text-indigo-600 transition-all duration-300 hover:cursor-pointer">
+          <i class="ri-heart-3-line text-lg"></i> Wishlist
+        </div>
+        <div class="hover:text-indigo-600 transition-all duration-300 hover:cursor-pointer">
+          <i class="ri-shopping-cart-line text-lg"></i> Cart
+        </div>
+      </div>
+    </div>
+    <nav class="flex justify-around  mt-5 border-b">
+      <div>
+        <div class="menu">
+          <i class="ri-menu-2-line p-2  border text-2xl rounded"></i>
+        </div>
+        <!-- <div class="dropdown-menu">
+          <div class="block">
+            <div class="tab">
+              <div class="tablist grid grid-rows-5 gap-5 justify-items-start mt-3">
+                <button type="button" class=" ">Dairy & Bakery</button>
+                <button type="button"  class=" ">Fruits & Vegetables</button>
+                <button type="button"  class=" ">Snacks & Spices</button>
+                <button type="button"  class=" ">Juice & Drinks</button>
+                <button type="button"  class=" ">View All</button>
+              </div>
+              <div class="tab-content">
+                <div class="tab-pane">
+                  <div class="tab-list row">
+                    <div class="col">
+                      <h6>Dairy</h6>
+                      <ul class="list">
+                        <li><a href="javascript:void()">Milk</a></li>
+                        <li><a href="javascript:void()">Ice cream</a></li>
+                        <li><a href="javascript:void()">Cheese</a></li>
+                        <li><a href="javascript:void()">Frozen Custord</a></li>
+                        <li><a href="javascript:void()">Frozen Yohurt</a></li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <h6>Dairy</h6>
+                      <ul class="list">
+                        <li><a href="javascript:void()">Cake & Pastry</a></li>
+                        <li><a href="javascript:void()">Rusk Toast</a></li>
+                        <li><a href="javascript:void()">Cheese Sandwitch</a></li>
+                        <li><a href="javascript:void()">Chocolate Brownie</a></li>
+                        <li><a href="javascript:void()">Cream Roll</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                  <div class="tab-pane">
+                    <div class="tab-list row">
+                      <div class="col">
+                        <h6>Dairy</h6>
+                        <ul class="list">
+                          <li><a href="javascript:void()">Milk</a></li>
+                          <li><a href="javascript:void()">Ice cream</a></li>
+                          <li><a href="javascript:void()">Cheese</a></li>
+                          <li><a href="javascript:void()">Frozen Custord</a></li>
+                          <li><a href="javascript:void()">Frozen Yohurt</a></li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <h6>Dairy</h6>
+                        <ul class="list">
+                          <li><a href="javascript:void()">Milk</a></li>
+                          <li><a href="javascript:void()">Ice cream</a></li>
+                          <li><a href="javascript:void()">Cheese</a></li>
+                          <li><a href="javascript:void()">Frozen Custord</a></li>
+                          <li><a href="javascript:void()">Frozen Yohurt</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+        </div> -->
+      </div>
+      <div class="dropbtn mt-1">
+        <a href="javascript:void()" class=" text-base font-medium">Home</a>
+      </div>
+      <div class="dropdown mt-1">
+        <button class="dropbtn text-black font-medium text-base">Categories
+          <i class="ri-arrow-down-s-line"></i>
+        </button>
+        <div class="dropdown-content rounded">
+          <a href="javascript:void()">Shop Left Sidebar</a>
+          <a href="javascript:void()">Shop Right Sidebar</a>
+          <a href="javascript:void()">Full Width</a>
+        </div>
+      </div>
+      <div class="dropdown mt-1">
+        <button class="dropbtn text-black font-medium text-base">Products
+          <i class="ri-arrow-down-s-line"></i>
+        </button>
+        <div class="dropdown-content rounded">
+          <a href="javascript:void()">Product Left Sidebar</a>
+          <a href="javascript:void()">Product Right Sidebar</a>
+          <a href="javascript:void()">Product Full Width</a>
+        </div>
+      </div>
+      <div class="dropdown mt-1">
+        <button class="dropbtn text-black font-medium text-base">Pages
+          <i class="ri-arrow-down-s-line"></i>
+        </button>
+        <div class="dropdown-content rounded">
+          <a href="javascript:void()">About Us</a>
+          <a href="javascript:void()">Contact Us</a>
+          <a href="javascript:void()">Cart</a>
+          <a href="javascript:void()">Checkout</a>
+          <a href="javascript:void()">Track Order</a>
+          <a href="javascript:void()">Wishlist</a>
+          <a href="javascript:void()">FAQ</a>
+          <a href="javascript:void()">Login</a>
+          <a href="javascript:void()">Register</a>
+        </div>
+      </div>
+      <div class="dropdown mt-1">
+        <button class="dropbtn text-black font-medium text-base">Blog
+          <i class="ri-arrow-down-s-line"></i>
+        </button>
+        <div class="dropdown-content rounded">
+          <a href="javascript:void()">Left Sidebar</a>
+          <a href="javascript:void()">Right Sidebar</a>
+          <a href="javascript:void()">Full Width</a>
+          <a href="javascript:void()">Detailed Left Sidebar</a>
+          <a href="javascript:void()">Detailed Right Sidebar</a>
+          <a href="javascript:void()">Detailed Full Width</a>
+        </div>
+      </div>
+      <div class="dropdown mt-1">
+        <button class="dropbtn text-black font-medium text-base">Elements
+          <i class="ri-arrow-down-s-line"></i>
+        </button>
+        <div class="dropdown-content rounded">
+          <a href="javascript:void()">Products</a>
+          <a href="javascript:void()">Typography</a>
+          <a href="javascript:void()">Buttons</a>
+        </div>
+      </div>
+      <div class="relative location">
+        <!--  onMouseOver="show_menu()" onMouseout="hide_menu()" -->
+        <div class="flex border p-2  rounded w-52 justify-between  cursor-pointer location_menu">
+          <span><i class="ri-map-pin-line text-lg px-1"></i>
+            New York</span>
+          <i class="ri-arrow-down-s-line"></i>
+        </div>
+        <div id="menu" class="bg-white hidden absolute border p-2 w-52 rounded space-y-2 mt-2 z-[99] location-list ">
+          <div class="border p-2  rounded w-48 hover:border-indigo-600 transition-all">
+            <span class="location-icon"><i class="ri-map-pin-line text-lg px-1"></i>
+              <a href="#"> Current Location</a></span>
+          </div>
+          <div class="border p-2  rounded w-48 hover:border-indigo-600 transition-all ">
+            <span class="location-icon"><i class="ri-map-pin-line text-lg px-1 hover:text-indigo-600"></i>
+              <a href="#"> Chicago</a></span>
+          </div>
+          <div class=" border p-2  rounded w-48 hover:border-indigo-600 transition-all">
+            <span class="location-icon"><i class="ri-map-pin-line text-lg px-1"></i>
+              <a href="#"> Houston</a></span>
+          </div>
+          <div class="border p-2  rounded w-48 hover:border-indigo-600 transition-all">
+            <span class="location-icon"><i class="ri-map-pin-line text-lg px-1"></i>
+              <a href="#"> Phoenix</a></span>
+          </div>
+          <div class=" border p-2  rounded w-48 hover:border-indigo-600 transition-all">
+            <span class="location-icon"><i class="ri-map-pin-line text-lg px-1"></i>
+              <a href="#"> San Deigo</a></span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Header section ends -->
+
+  <!-- Hero Section starts -->
+  <section class="hero">
+    <div class="swiper mySwiper m-8">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide rounded-3xl bg-[url('./assets/img/banner2.jpg')] bg-cover bg-center relative">
+          <img src="./assets/img/leaf2.png" alt="leaf" class="absolute -start-6 h-72 top-6 anime">
+          <img src="./assets/img/leaf2.png" alt="leaf" class="absolute -start-6 h-72 top-14 anime2">
+          <img src="./assets/img/leaf1.png" alt="leaf" class="absolute -end-6 h-72 bottom-6 anime1">
+          <div class="content absolute start-36">
+            <h5 class="text-xl text-left text-[#33373A] mb-5 font-bold " data-aos="fade-up" data-aos-duration="2000">
+              <span class="text-[#3f51b5] border-b-2 border-[#3f51b5]">100% </span>Cotton Fabric
+            </h5>
+            <h1 class="text-5xl text-left w-4/6 mb-5 leading-tight font-bold" data-aos="fade-up"
+              data-aos-duration="2000">Fashion sale for women's.</h1>
+            <p class="text-[#818181] text-left w-4/6 text-lg leading-7 mb-5" data-aos="fade-up"
+              data-aos-duration="2000">This summer be trendy where style meets comfort with fine quality super soft
+              fabrics.</p>
+            <button
+              class=" absolute start-0 btn py-3 px-5 rounded font-semibold text-white bg-indigo-700 hover:bg-black transition-all duration-500"
+              data-aos="fade-up" data-aos-duration="2000"> Shop Now </button>
+          </div>
+        </div>
+        <div class="swiper-slide rounded-3xl bg-[url('./assets/img/banner1.jpg')] bg-cover bg-center relative">
+          <img src="./assets/img/leaf2.png" alt="leaf" class="absolute -start-6 h-72 top-6 anime">
+          <img src="./assets/img/leaf2.png" alt="leaf" class="absolute -start-6 h-72 top-14 anime2">
+          <img src="./assets/img/leaf1.png" alt="leaf" class="absolute -end-6 h-72 bottom-6 anime1">
+          <div class="content absolute start-36">
+            <h5 class="text-xl text-left text-[#33373A] mb-5 font-bold " data-aos="fade-up" data-aos-duration="2000">
+              <span class="text-[#3f51b5] border-b-2 border-[#3f51b5]">100% </span>Cotton Fabric
+            </h5>
+            <h1 class="text-5xl text-left w-4/6 mb-5 leading-tight font-bold" data-aos="fade-up"
+              data-aos-duration="2000">Explore jeans summer sale.</h1>
+            <p class="text-[#818181] text-left w-4/6 text-lg leading-7 mb-5" data-aos="fade-up"
+              data-aos-duration="2000">This summer beat the heat with super soft comfy cotton fabrics. Select style that
+              matches comfort.</p>
+            <button
+              class=" absolute start-0 btn py-3 px-5 rounded font-semibold text-white bg-indigo-700 hover:bg-black transition-all duration-500"
+              data-aos="fade-up" data-aos-duration="2000"> Shop Now </button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination "></div>
+    </div>
+  </section>
+  <!-- Hero Section ends -->
+
+  <!-- Category section starts -->
+  <section class="category px-36 md:my-24" data-aos="fade-up" data-aos-duration="2000">
+    <div class="grid sm:grid-rows-3 md:grid-rows-2 lg:grid-rows-1 grid-flow-col space-x-6">
+      <div class="relative bg-[#F7F7F8] border rounded-lg pb-4 pt-16 text-center">
+        <!-- <div class=" absolute -top-4 start-1/3"> -->
+        <div class=" absolute -top-10 start-1/3 img_anime">
+          <img src="./assets/img/shirt.png" alt="tshirt"
+            class="w-20 bg-[#FFEAE9]  p-4 border-8 border-white shadow-sm rounded-full ">
+          <!-- <i class="ri-t-shirt-line bg-[#FFEAE9] text-3xl font-thin p-4 border-8 border-white shadow-sm rounded-full"></i> -->
+        </div>
+        <p class="font-medium text-lg mb-1 cursor-pointer">Shirt</p>
+        <p class="text-slate-600 text-sm">(67 Items)</p>
+      </div>
+      <div class="relative bg-[#F7F7F8] border rounded-lg pb-4 pt-16 text-center">
+        <div class=" absolute -top-10 start-1/3 img_anime">
+          <img src="./assets/img/hat.png" alt="hats"
+            class="w-20 bg-[#FFF6EC]  p-4 border-8 border-white shadow-sm rounded-full">
+        </div>
+        <p class="font-medium text-lg mb-1 cursor-pointer">Hats</p>
+        <p class="text-slate-600 text-sm">(27 Items)</p>
+      </div>
+      <div class="relative bg-[#F7F7F8] border rounded-lg pb-4 pt-16 text-center ">
+        <div class=" absolute -top-10 start-1/3 img_anime">
+          <img src="./assets/img/boot.png" alt="boot"
+            class="w-20 bg-[#E2FDE2]  p-4 border-8 border-white shadow-sm rounded-full">
+        </div>
+        <p class="font-medium text-lg mb-1 cursor-pointer">Boot</p>
+        <p class="text-slate-600 text-sm">(32 Items)</p>
+      </div>
+      <div class="relative bg-[#F7F7F8] border rounded-lg pb-4 pt-16 text-center ">
+        <div class=" absolute -top-10 start-1/3 img_anime">
+          <img src="./assets/img/camisole.png" alt="top"
+            class="w-20 bg-[#FFEAE9]  p-4 border-8 border-white shadow-sm rounded-full">
+        </div>
+        <p class="font-medium text-lg mb-1 cursor-pointer">Tops</p>
+        <p class="text-slate-600 text-sm">(78 Items)</p>
+      </div>
+      <div class="relative bg-[#F7F7F8] border rounded-lg pb-4 pt-16 text-center">
+        <div class=" absolute -top-10 start-1/3 img_anime">
+          <img src="./assets/img/waistcoat.png" alt="vest"
+            class="w-20 bg-[#FDE1F5]  p-4 border-8 border-white shadow-sm rounded-full ">
+        </div>
+        <p class="font-medium text-lg mb-1 cursor-pointer">Vest</p>
+        <p class="text-slate-600 text-sm">(49 Items)</p>
+      </div>
+      <div class="relative bg-[#F7F7F8] border rounded-lg pb-4 pt-16 text-center">
+        <div class=" absolute -top-10 start-1/3 img_anime">
+          <img src="./assets/img/socks.png" alt="vest"
+            class="w-20 bg-[#FDE1F5]  p-4 border-8 border-white shadow-sm rounded-full ">
+        </div>
+        <p class="font-medium text-lg mb-1 cursor-pointer">Socks</p>
+        <p class="text-slate-600 text-sm">(49 Items)</p>
+      </div>
+    </div>
+  </section>
+  <!-- Category section ends -->
+
+  <!-- New Arrival section starts -->
+  <div class="arrival px-36 my-10">
+    <div class="flex justify-between mb-8 align-middle">
+      <div>
+        <h3 class="text-2xl font-semibold tracking-wider">New Arrivals</h3>
+        <p class="text-sm text-slate-500 tracking-wide  ">Browse The Collection of Top Products.</p>
+      </div>
+      <div class="bg-[#f1f1f7] rounded px-4 py-1 h-8">
+        <!-- <p class="font-semibold" >482 &nbsp; <span class="font-normal">Days &nbsp;&nbsp;</span><span id="txt" class="font-semibold tracking-widest">  </span></p> -->
+        <p class="font-semibold  tracking-wider" style="word-spacing: 3px;" id="demo"></p>
+      </div>
+    </div>
+    <div class="swiper mySwiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="flex gap-5 overflow-hidden ">
+            <div class="border border-slate-[150] rounded w-60 h-[relative product-card">
+              <div class="bg-[#F7F7F8] border border-slate-[150] m-3">
+                <p class="bg-[#64B496] text-white font-medium w-1/2">50% Sale</p>
+                <img src="./assets/img/18.jpg" alt="girl" class="rounded visible  main_image ">
+                <img src="./assets/img/19.jpg" alt="girl" class="rounded hidden hover_image">
+              </div>
+              <div class="icon hidden absolute">
+                <div class="flex justify-center align-middle gap-0.5">
+                  <i
+                    class="ri-eye-line bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+                  <i
+                    class="ri-file-copy-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+                  <i
+                    class="ri-shopping-cart-line  bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+                  <i
+                    class="ri-heart-3-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+                </div>
+              </div>
+              <hr class="-mt-50">
+              <div class="m-3">
+                <div class="flex justify-between">
+                  <p class="text-start text-sm text-[#9F9F9F]">Womens Top</p>
+                  <span>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                  </span>
+                </div>
+                <p
+                  class="text-sm text-start tracking-widest my-3 hover:text-indigo-600 transition-all duration-100 cursor-pointer">
+                  Colourful Top for Women</p>
+                <p class="text-start font-semibold">$6.00 <span
+                    class="font-normal text-slate-500 line-through text-sm ">&nbsp;$9.00</span></p>
+                <div class="flex justify-between my-3">
+                  <div class="flex gap-4">
+                    <span
+                      class="bg-[#B1DFFF] hover:bg-[#a3c1dc] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                    <span
+                      class="bg-[#F8C9D0] hover:bg-[#efc1c8] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                  </div>
+                  <div class="flex gap-3">
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer text-center text-[#bebdbd]">M</span>
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">L</span>
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">XL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="flex gap-5 overflow-hidden ">
+            <div class="border border-slate-[150] rounded w-60 relative product-card">
+              <div class="bg-[#F7F7F8] border border-slate-[150] m-3">
+                <p class="bg-[#F7F7F8] text-[#F7F7F8] font-medium w-1/2">50%off</p>
+                <img src="./assets/img/20.jpg" alt="girl" class="rounded visible  main_image ">
+                <img src="./assets/img/21.jpg" alt="girl" class="rounded hidden hover_image">
+              </div>
+              <div class="icon hidden absolute">
+                <div class="flex justify-center align-middle gap-0.5">
+                  <i
+                    class="ri-eye-line bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+                  <i
+                    class="ri-file-copy-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+                  <i
+                    class="ri-shopping-cart-line  bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+                  <i
+                    class="ri-heart-3-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+                </div>
+              </div>
+              <hr class="-mt-50">
+              <div class="m-3">
+                <div class="flex justify-between">
+                  <p class="text-sm text-[#9F9F9F]">Nightwear</p>
+                  <span>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                  </span>
+                </div>
+                <p
+                  class="text-sm text-start tracking-widest my-3 hover:text-indigo-600 transition-all duration-100 cursor-pointer">
+                  Nightsuit for Women</p>
+                <p class="text-start font-semibold">$12.00 <span
+                    class="font-normal line-through text-sm text-slate-500">&nbsp;$18.00</span></p>
+                <div class="flex justify-between my-3">
+                  <div class="flex gap-4">
+                    <span
+                      class="bg-[#8b8f7d] hover:bg-[#72746c] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                    <span
+                      class="bg-[#a6f3a5] hover:bg-[#94eb92] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                  </div>
+                  <div class="flex gap-3">
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer text-center text-[#bebdbd]">M</span>
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">L</span>
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">XL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="flex gap-5 overflow-hidden ">
+            <div class="border border-slate-[150] rounded w-60 relative product-card">
+              <div class="bg-[#F7F7F8] border border-slate-[150] m-3">
+                <p class="bg-[#7D76FF] text-white font-medium w-1/2">Trending</p>
+                <img src="./assets/img/28.jpg" alt="girl" class="rounded visible  main_image ">
+                <img src="./assets/img/29.jpg" alt="girl" class="rounded hidden hover_image">
+              </div>
+              <div class="icon hidden absolute">
+                <div class="flex justify-center align-middle gap-0.5">
+                  <i
+                    class="ri-eye-line bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+                  <i
+                    class="ri-file-copy-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+                  <i
+                    class="ri-shopping-cart-line  bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+                  <i
+                    class="ri-heart-3-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+                </div>
+              </div>
+              <hr class="-mt-50">
+              <div class="m-3">
+                <div class="flex justify-between">
+                  <p class="text-sm text-[#9F9F9F]">Mens Tshirt</p>
+                  <span>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill  font-medium"></i>
+                  </span>
+                </div>
+                <p
+                  class="text-sm text-start tracking-widest my-3 hover:text-indigo-600 transition-all duration-100 cursor-pointer">
+                  Black Tshirt for Men</p>
+                <p class="font-semibold text-start">$11.00 <span
+                    class="font-normal line-through text-sm text-slate-500 ">&nbsp;$22.00</span></p>
+                <div class="flex justify-between my-3">
+                  <div class="flex gap-4">
+                    <span
+                      class="bg-[#4d87b0] hover:bg-[#40719c] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                    <span
+                      class="bg-[#232222] hover:bg-[#050505] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                  </div>
+                  <div class="flex gap-3">
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer text-center text-[#bebdbd]">M</span>
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">L</span>
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">XL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-slide">
+          <div class="flex gap-5 overflow-hidden ">
+            <div class="border border-slate-[150] rounded w-60 relative product-card">
+              <div class="bg-[#F7F7F8] border border-slate-[150] m-3">
+                <p class="bg-[#ff6262] text-white font-medium w-1/2">30% Sale</p>
+                <img src="./assets/img/24.jpg" alt="girl" class="rounded visible  main_image ">
+                <img src="./assets/img/25.jpg" alt="girl" class="rounded hidden hover_image">
+              </div>
+              <div class="icon hidden absolute">
+                <div class="flex justify-center align-middle gap-0.5">
+                  <i
+                    class="ri-eye-line bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+                  <i
+                    class="ri-file-copy-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+                  <i
+                    class="ri-shopping-cart-line  bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+                  <i
+                    class="ri-heart-3-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+                </div>
+              </div>
+              <hr class="-mt-50">
+              <div class="m-3">
+                <div class="flex justify-between">
+                  <p class="text-sm text-[#9F9F9F]">Kids Top</p>
+                  <span>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill  font-medium"></i>
+                  </span>
+                </div>
+                <p
+                  class="text-sm text-start tracking-widest my-3 hover:text-indigo-600 transition-all duration-100 cursor-pointer">
+                  Kids Sweatshirt</p>
+                <p class="text-start font-semibold">$10.00 <span
+                    class="font-normal text-slate-500 line-through text-sm ">&nbsp;$15.00</span></p>
+                <div class="flex justify-between my-3">
+                  <div class="flex gap-4">
+                    <span
+                      class="bg-[#ef4e4e] hover:bg-[#cf4141] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                    <span
+                      class="bg-[#eb48d2] hover:bg-[#b1359e] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                  </div>
+                  <div class="flex gap-3">
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer text-center text-[#bebdbd]">M</span>
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">L</span>
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">XL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="flex gap-5 overflow-hidden ">
+            <div class="border border-slate-[150] rounded w-60 relative product-card">
+              <div class="bg-[#F7F7F8] border border-slate-[150] m-3">
+                <p class="bg-[#64B496] text-white font-medium w-1/2">50% Sale</p>
+                <img src="./assets/img/22.jpg" alt="girl" class="rounded visible  main_image ">
+                <img src="./assets/img/23.jpg" alt="girl" class="rounded hidden hover_image">
+              </div>
+              <div class="icon hidden absolute">
+                <div class="flex justify-center align-middle gap-0.5">
+                  <i
+                    class="ri-eye-line bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+                  <i
+                    class="ri-file-copy-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+                  <i
+                    class="ri-shopping-cart-line  bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+                  <i
+                    class="ri-heart-3-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+                </div>
+              </div>
+              <hr class="-mt-50">
+              <div class="m-3">
+                <div class="flex justify-between">
+                  <p class="text-start text-sm text-[#9F9F9F]">Womens Top</p>
+                  <span>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                  </span>
+                </div>
+                <p
+                  class="text-sm text-start tracking-widest my-3 hover:text-indigo-600 transition-all duration-100 cursor-pointer">
+                  Colourful Top for Women</p>
+                <p class="text-start font-semibold">$6.00 <span
+                    class="font-normal text-slate-500 line-through text-sm ">&nbsp;$9.00</span></p>
+                <div class="flex justify-between my-3">
+                  <div class="flex gap-4">
+                    <span
+                      class="bg-[#B1DFFF] hover:bg-[#a3c1dc] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                    <span
+                      class="bg-[#F8C9D0] hover:bg-[#efc1c8] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                  </div>
+                  <div class="flex gap-3">
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer text-center text-[#bebdbd]">M</span>
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">L</span>
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">XL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="flex gap-5 overflow-hidden ">
+            <div class="border border-slate-[150] rounded w-60 relative product-card">
+              <div class="bg-[#F7F7F8] border border-slate-[150] m-3">
+                <p class="bg-[#F7F7F8] text-[#F7F7F8] font-medium w-1/2">50%off</p>
+                <img src="./assets/img/20.jpg" alt="girl" class="rounded visible  main_image ">
+                <img src="./assets/img/21.jpg" alt="girl" class="rounded hidden hover_image">
+              </div>
+              <div class="icon hidden absolute">
+                <div class="flex justify-center align-middle gap-0.5">
+                  <i
+                    class="ri-eye-line bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+                  <i
+                    class="ri-file-copy-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+                  <i
+                    class="ri-shopping-cart-line  bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+                  <i
+                    class="ri-heart-3-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+                </div>
+              </div>
+              <hr class="-mt-50">
+              <div class="m-3">
+                <div class="flex justify-between">
+                  <p class="text-sm text-[#9F9F9F]">Nightwear</p>
+                  <span>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                  </span>
+                </div>
+                <p
+                  class="text-sm text-start tracking-widest my-3 hover:text-indigo-600 transition-all duration-100 cursor-pointer">
+                  Nightsuit for Women</p>
+                <p class="text-start font-semibold">$12.00 <span
+                    class="font-normal line-through text-sm text-slate-500">&nbsp;$18.00</span></p>
+                <div class="flex justify-between my-3">
+                  <div class="flex gap-4">
+                    <span
+                      class="bg-[#8b8f7d] hover:bg-[#72746c] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                    <span
+                      class="bg-[#a6f3a5] hover:bg-[#94eb92] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                  </div>
+                  <div class="flex gap-3">
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer text-center text-[#bebdbd]">M</span>
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">L</span>
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">XL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="flex gap-5 overflow-hidden ">
+            <div class="border border-slate-[150] rounded w-60 relative product-card">
+              <div class="bg-[#F7F7F8] border border-slate-[150] m-3">
+                <p class="bg-[#7D76FF] text-white font-medium w-1/2">Trending</p>
+                <img src="./assets/img/30.jpg" alt="girl" class="rounded visible  main_image ">
+                <img src="./assets/img/29.jpg" alt="girl" class="rounded hidden hover_image">
+              </div>
+              <div class="icon hidden absolute">
+                <div class="flex justify-center align-middle gap-0.5">
+                  <i
+                    class="ri-eye-line bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+                  <i
+                    class="ri-file-copy-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+                  <i
+                    class="ri-shopping-cart-line  bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+                  <i
+                    class="ri-heart-3-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+                </div>
+              </div>
+              <hr class="-mt-50">
+              <div class="m-3">
+                <div class="flex justify-between">
+                  <p class="text-sm text-[#9F9F9F]">Mens Tshirt</p>
+                  <span>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill  font-medium"></i>
+                  </span>
+                </div>
+                <p
+                  class="text-sm text-start tracking-widest my-3 hover:text-indigo-600 transition-all duration-100 cursor-pointer">
+                  Black Tshirt for Men</p>
+                <p class="font-semibold text-start">$11.00 <span
+                    class="font-normal line-through text-sm text-slate-500 ">&nbsp;$22.00</span></p>
+                <div class="flex justify-between my-3">
+                  <div class="flex gap-4">
+                    <span
+                      class="bg-[#4d87b0] hover:bg-[#40719c] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                    <span
+                      class="bg-[#232222] hover:bg-[#050505] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                  </div>
+                  <div class="flex gap-3">
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer text-center text-[#bebdbd]">M</span>
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">L</span>
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">XL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-slide">
+          <div class="flex gap-5 overflow-hidden ">
+            <div class="border border-slate-[150] rounded w-60 relative product-card">
+              <div class="bg-[#F7F7F8] border border-slate-[150] m-3">
+                <p class="bg-[#ff6262] text-white font-medium w-1/2">30% Sale</p>
+                <img src="./assets/img/26.jpg" alt="girl" class="rounded visible  main_image ">
+                <img src="./assets/img/27.jpg" alt="girl" class="rounded hidden hover_image">
+              </div>
+              <div class="icon hidden absolute">
+                <div class="flex justify-center align-middle gap-0.5">
+                  <i
+                    class="ri-eye-line bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+                  <i
+                    class="ri-file-copy-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+                  <i
+                    class="ri-shopping-cart-line  bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+                  <i
+                    class="ri-heart-3-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+                </div>
+              </div>
+              <hr class="-mt-50">
+              <div class="m-3">
+                <div class="flex justify-between">
+                  <p class="text-sm text-[#9F9F9F]">Kids Top</p>
+                  <span>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                    <i class="ri-star-line fill  font-medium"></i>
+                  </span>
+                </div>
+                <p
+                  class="text-sm text-start tracking-widest my-3 hover:text-indigo-600 transition-all duration-100 cursor-pointer">
+                  Kids Sweatshirt</p>
+                <p class="text-start font-semibold">$10.00 <span
+                    class="font-normal text-slate-500 line-through text-sm ">&nbsp;$15.00</span></p>
+                <div class="flex justify-between my-3">
+                  <div class="flex gap-4">
+                    <span
+                      class="bg-[#ef4e4e] hover:bg-[#cf4141] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                    <span
+                      class="bg-[#eb48d2] hover:bg-[#b1359e] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                  </div>
+                  <div class="flex gap-3">
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer text-center text-[#bebdbd]">M</span>
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">L</span>
+                    <span
+                      class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">XL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+
+  </div>
+  <!-- New Arrival section ends -->
+
+  <!-- Service section starts -->
+  <section class="services px-36 my-32" data-aos="fade-up" data-aos-duration="2000">
+    <div class="swiper mySwiper1 overflow-hidden grid grid-cols-3">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide cursor-default">
+          <div class=" bg-[#F7F7F8] border rounded-lg py-8 px-4 text-center">
+            <i class="ri-red-packet-line text-[#5969BF] font-bold text-5xl"></i>
+            <p class="font-semibold text-2xl mt-3 mb-3">Product Packing</p>
+            <p class="text-slate-400 text-lg">A triple layer packing that protects your product from damage.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-[#F7F7F8] border rounded-lg py-8 px-4 text-center">
+            <i class="ri-customer-service-2-line text-[#5969BF] font-bold text-5xl"></i>
+            <p class="font-semibold text-2xl mt-3 mb-3">24X7 Support</p>
+            <p class="text-slate-400 text-lg">For any queries contact our 24X7 dedicated support team.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative bg-[#F7F7F8] border rounded-lg py-8 px-4 text-center">
+            <i class="ri-truck-line text-[#5969BF] font-bold text-5xl"></i>
+            <p class="font-semibold text-2xl mt-3 mb-3">Deliver in 5 Days</p>
+            <p class="text-slate-400 text-lg">Get your product within 5 days. Superfast delivery also available.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative bg-[#F7F7F8] border rounded-lg py-8 px-4 text-center">
+            <i class="ri-money-dollar-box-line text-[#5969BF] font-bold text-5xl"></i>
+            <p class="font-semibold text-2xl mt-3 mb-3">Payment Secure</p>
+            <p class="text-slate-400 text-lg">Payment made easy with secure upi transaction also available.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative bg-[#F7F7F8] border rounded-lg py-8 px-4 text-center">
+            <i class="ri-exchange-line text-[#5969BF] font-bold text-5xl"></i>
+            <p class="font-semibold text-2xl mt-3 mb-3">Easy Exchange</p>
+            <p class="text-slate-400 text-lg">Exchange available within 14 days of delivery.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative bg-[#F7F7F8] border rounded-lg py-8 px-4 text-center">
+            <i class="ri-refund-2-line text-[#5969BF] font-bold text-5xl"></i>
+            <p class="font-semibold text-2xl mt-3 mb-3">Easy Refunds</p>
+            <p class="text-slate-400 text-lg">Refund processed to the payment source within 48 hours of pickup.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Service section ends -->
+  <!-- great deal section start -->
+  <div class="deal my-24 bg-[url(./assets/img/bg-deal-2.jpg)] w-[100%] h-[700px] bg-cover">
+    <div class="px-36 relative top-1/4 " data-aos="fade-up" data-aos-duration="2000">
+      <div class="p-[24px] shadow-lg max-w-[500px] h-[300px]  rounded-lg bg-[#fffffd38]">
+        <span class="font-[400] text-[16px]">
+          <code class="text-indigo-600 text-[26px] font-bold">40% </code>OFF</span>
+        <h4 class="mt-3 mb-4 font-semibold text-[26px] text-[#2b2b2b]">Great Deal on Womens Fashion</h4>
+        <p class="text-sm text-[#7a7a7a] tracking-wider leading-6 mb-5]">Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Similique, dolore.
+        </p>
+        <div class="my-8 ">
+          <p class="font-semibold text-[26px]  tracking-wider" style="word-spacing: 3px;" id="demo1">
+          </p>
+          <p class="text-[#7a7a7a] tracking-widest">Days&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hrs
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Min &nbsp;&nbsp;&nbsp;Sec</p>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <!-- great deal section ends -->
+  <!-- Discount Section Starts -->
+  <div class="discount px-36 my-24" data-aos="fade-up" data-aos-duration="2000">
+    <div class="flex gap-5">
+      <div class="rounded-lg bg-[url(./assets/img/4.jpg)] w-1/3 h-[230px] bg-cover bg-right bg-no-repeat">
+        <div class="p-[24px] align-middle mt-1">
+          <h5 class="mb-4 text-xl font-semibold lead">
+            Womens <br> Summer fashion
+          </h5>
+          <p class="text-[#777] tracking-wider pb-4"><span class="text-[#3f51b5] text-xl font-semibold">25% </span>Off
+            on first order</p>
+          <button
+            class="btn py-3 px-5 rounded font-semibold text-sm text-white bg-indigo-700 hover:bg-black transition-all duration-500">
+            Shop Now </button>
+        </div>
+      </div>
+      <div class="rounded-lg bg-[url(./assets/img/5.jpg)] w-1/3 h-[230px] bg-cover bg-right bg-no-repeat">
+        <div class="p-[24px] align-middle mt-1">
+          <h5 class="mb-4 text-xl font-semibold lead">
+            Cotton <br> Jackets for Mens
+          </h5>
+          <p class="text-[#777] tracking-wider pb-4">
+            <span class="text-[#3f51b5] text-xl font-semibold">33% </span>
+            Off on first order
+          </p>
+          <button
+            class="btn py-3 px-5 rounded font-semibold text-sm text-white bg-indigo-700 hover:bg-black transition-all duration-500">
+            Shop Now </button>
+        </div>
+      </div>
+      <div class="rounded-lg bg-[url(./assets/img/6.jpg)] w-1/3 h-[230px] bg-cover bg-right bg-no-repeat">
+        <div class="p-[24px] align-middle mt-1">
+          <h5 class="mb-4 text-xl font-semibold lead">
+            Children <br> Latest fashion
+          </h5>
+          <p class="text-[#777] tracking-wider pb-4">
+            <span class="text-[#3f51b5] text-xl font-semibold">15% </span>Off
+            on first order
+          </p>
+          <button
+            class="btn py-3 px-5 rounded font-semibold text-sm text-white bg-indigo-700 hover:bg-black transition-all duration-500">
+            Shop Now </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--Discount Section Ends -->
+  <!-- Top Collection section starts -->
+  <div class="arrival px-36 my-10">
+    <div class="flex justify-between mb-8 align-middle">
+      <div>
+        <h3 class="text-2xl font-semibold tracking-wider">Top Collection</h3>
+        <p class="text-sm text-slate-500 tracking-wide  ">Shop online for top collection and get free shipping!</p>
+      </div>
+      <div class="px-4 py-1">
+        <button class="btn py-3 px-5 rounded font-normal text-black bg-white border border-black ">All</button>
+        <button class="btn py-3 px-5 rounded font-normal text-black bg-white border hover:border-black ">Womens</button>
+        <button class="btn py-3 px-5 rounded font-normal text-black bg-white border hover:border-black ">Mens</button>
+        <button class="btn py-3 px-5 rounded font-normal text-black bg-white border hover:border-black ">Kids</button>
+      </div>
+    </div>
+    <div class="grid sm:grid-rows-5 lg:grid-rows-2 grid-flow-col space-x-6 gap-5" data-aos="fade-up"
+      data-aos-duration="2000">
+      <div class="flex gap-5 overflow-hidden ">
+        <div class="border border-slate-[150] rounded w-60 h-[relative product-card">
+          <div class="bg-[#F7F7F8] border border-slate-[150] m-3">
+            <p class="bg-[#64B496] text-white font-medium w-1/2">50% Sale</p>
+            <img src="./assets/img/18.jpg" alt="girl" class="rounded visible  main_image ">
+            <img src="./assets/img/19.jpg" alt="girl" class="rounded hidden hover_image">
+          </div>
+          <div class="icon hidden absolute">
+            <div class="flex justify-center align-middle gap-0.5">
+              <i
+                class="ri-eye-line bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+              <i
+                class="ri-file-copy-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+              <i
+                class="ri-shopping-cart-line  bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+              <i
+                class="ri-heart-3-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+            </div>
+          </div>
+          <hr class="-mt-50">
+          <div class="m-3">
+            <div class="flex justify-between">
+              <p class="text-start text-sm text-[#9F9F9F]">Womens Top</p>
+              <span>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+              </span>
+            </div>
+            <p
+              class="text-sm text-start tracking-widest my-3 hover:text-indigo-600 transition-all duration-100 cursor-pointer">
+              Colourful Top for Women</p>
+            <p class="text-start font-semibold">$6.00 <span
+                class="font-normal text-slate-500 line-through text-sm ">&nbsp;$9.00</span></p>
+            <div class="flex justify-between my-3">
+              <div class="flex gap-4">
+                <span
+                  class="bg-[#B1DFFF] hover:bg-[#a3c1dc] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                <span
+                  class="bg-[#F8C9D0] hover:bg-[#efc1c8] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+              </div>
+              <div class="flex gap-3">
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer text-center text-[#bebdbd]">M</span>
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">L</span>
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">XL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-5 overflow-hidden ">
+        <div class="border border-slate-[150] rounded w-60 relative product-card">
+          <div class="bg-[#F7F7F8] border border-slate-[150] m-3">
+            <p class="bg-[#F7F7F8] text-[#F7F7F8] font-medium w-1/2">50%off</p>
+            <img src="./assets/img/42.jpg" alt="girl" class="rounded visible  main_image ">
+            <img src="./assets/img/43.jpg" alt="girl" class="rounded hidden hover_image">
+          </div>
+          <div class="icon hidden absolute">
+            <div class="flex justify-center align-middle gap-0.5">
+              <i
+                class="ri-eye-line bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+              <i
+                class="ri-file-copy-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+              <i
+                class="ri-shopping-cart-line  bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+              <i
+                class="ri-heart-3-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+            </div>
+          </div>
+          <hr class="-mt-50">
+          <div class="m-3">
+            <div class="flex justify-between">
+              <p class="text-sm text-[#9F9F9F]">Nightwear</p>
+              <span>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+              </span>
+            </div>
+            <p
+              class="text-sm text-start tracking-widest my-3 hover:text-indigo-600 transition-all duration-100 cursor-pointer">
+              Top for Women</p>
+            <p class="text-start font-semibold">$12.00 <span
+                class="font-normal line-through text-sm text-slate-500">&nbsp;$18.00</span></p>
+            <div class="flex justify-between my-3">
+              <div class="flex gap-4">
+                <span
+                  class="bg-[#f59996] hover:bg-[#f48682] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                <span
+                  class="bg-[#373937] hover:bg-[#050505] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+              </div>
+              <div class="flex gap-3">
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer text-center text-[#bebdbd]">M</span>
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">L</span>
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">XL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-5 overflow-hidden ">
+        <div class="border border-slate-[150] rounded w-60 relative product-card">
+          <div class="bg-[#F7F7F8] border border-slate-[150] m-3">
+            <p class="bg-[#7D76FF] text-white font-medium w-1/2">Trending</p>
+            <img src="./assets/img/28.jpg" alt="girl" class="rounded visible  main_image ">
+            <img src="./assets/img/29.jpg" alt="girl" class="rounded hidden hover_image">
+          </div>
+          <div class="icon hidden absolute">
+            <div class="flex justify-center align-middle gap-0.5">
+              <i
+                class="ri-eye-line bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+              <i
+                class="ri-file-copy-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+              <i
+                class="ri-shopping-cart-line  bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+              <i
+                class="ri-heart-3-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+            </div>
+          </div>
+          <hr class="-mt-50">
+          <div class="m-3">
+            <div class="flex justify-between">
+              <p class="text-sm text-[#9F9F9F]">Mens Tshirt</p>
+              <span>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill  font-medium"></i>
+              </span>
+            </div>
+            <p
+              class="text-sm text-start tracking-widest my-3 hover:text-indigo-600 transition-all duration-100 cursor-pointer">
+              Black Tshirt for Men</p>
+            <p class="font-semibold text-start">$11.00 <span
+                class="font-normal line-through text-sm text-slate-500 ">&nbsp;$22.00</span></p>
+            <div class="flex justify-between my-3">
+              <div class="flex gap-4">
+                <span
+                  class="bg-[#4d87b0] hover:bg-[#40719c] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                <span
+                  class="bg-[#232222] hover:bg-[#050505] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+              </div>
+              <div class="flex gap-3">
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer text-center text-[#bebdbd]">M</span>
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">L</span>
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">XL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-5 overflow-hidden ">
+        <div class="border border-slate-[150] rounded w-60 relative product-card">
+          <div class="bg-[#F7F7F8] border border-slate-[150] m-3">
+            <p class="bg-[#ff6262] text-white font-medium w-1/2">30% Sale</p>
+            <img src="./assets/img/24.jpg" alt="girl" class="rounded visible  main_image ">
+            <img src="./assets/img/25.jpg" alt="girl" class="rounded hidden hover_image">
+          </div>
+          <div class="icon hidden absolute">
+            <div class="flex justify-center align-middle gap-0.5">
+              <i
+                class="ri-eye-line bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+              <i
+                class="ri-file-copy-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+              <i
+                class="ri-shopping-cart-line  bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+              <i
+                class="ri-heart-3-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+            </div>
+          </div>
+          <hr class="-mt-50">
+          <div class="m-3">
+            <div class="flex justify-between">
+              <p class="text-sm text-[#9F9F9F]">Kids Top</p>
+              <span>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill  font-medium"></i>
+              </span>
+            </div>
+            <p
+              class="text-sm text-start tracking-widest my-3 hover:text-indigo-600 transition-all duration-100 cursor-pointer">
+              Kids Sweatshirt</p>
+            <p class="text-start font-semibold">$10.00 <span
+                class="font-normal text-slate-500 line-through text-sm ">&nbsp;$15.00</span></p>
+            <div class="flex justify-between my-3">
+              <div class="flex gap-4">
+                <span
+                  class="bg-[#ef4e4e] hover:bg-[#cf4141] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                <span
+                  class="bg-[#eb48d2] hover:bg-[#b1359e] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+              </div>
+              <div class="flex gap-3">
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer text-center text-[#bebdbd]">M</span>
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">L</span>
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">XL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-5 overflow-hidden ">
+        <div class="border border-slate-[150] rounded w-60 relative product-card">
+          <div class="bg-[#F7F7F8] border border-slate-[150] m-3">
+            <p class="bg-[#64B496] text-white font-medium w-1/2">20% Sale</p>
+            <img src="./assets/img/22.jpg" alt="girl" class="rounded visible  main_image ">
+            <img src="./assets/img/23.jpg" alt="girl" class="rounded hidden hover_image">
+          </div>
+          <div class="icon hidden absolute">
+            <div class="flex justify-center align-middle gap-0.5">
+              <i
+                class="ri-eye-line bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+              <i
+                class="ri-file-copy-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+              <i
+                class="ri-shopping-cart-line  bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+              <i
+                class="ri-heart-3-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+            </div>
+          </div>
+          <hr class="-mt-50">
+          <div class="m-3">
+            <div class="flex justify-between">
+              <p class="text-start text-sm text-[#9F9F9F]">Womens Top</p>
+              <span>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+              </span>
+            </div>
+            <p
+              class="text-sm text-start tracking-widest my-3 hover:text-indigo-600 transition-all duration-100 cursor-pointer">
+              Tshirt for Women</p>
+            <p class="text-start font-semibold">$6.00 <span
+                class="font-normal text-slate-500 line-through text-sm ">&nbsp;$9.00</span></p>
+            <div class="flex justify-between my-3">
+              <div class="flex gap-4">
+                <span
+                  class="bg-[#B1DFFF] hover:bg-[#a3c1dc] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                <span
+                  class="bg-[#F8C9D0] hover:bg-[#efc1c8] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+              </div>
+              <div class="flex gap-3">
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer text-center text-[#bebdbd]">M</span>
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">L</span>
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">XL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-5 overflow-hidden ">
+        <div class="border border-slate-[150] rounded w-60 relative product-card">
+          <div class="bg-[#F7F7F8] border border-slate-[150] m-3">
+            <p class="bg-[#F7F7F8] text-[#F7F7F8] font-medium w-1/2">50%off</p>
+            <img src="./assets/img/20.jpg" alt="girl" class="rounded visible  main_image ">
+            <img src="./assets/img/21.jpg" alt="girl" class="rounded hidden hover_image">
+          </div>
+          <div class="icon hidden absolute">
+            <div class="flex justify-center align-middle gap-0.5">
+              <i
+                class="ri-eye-line bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+              <i
+                class="ri-file-copy-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+              <i
+                class="ri-shopping-cart-line  bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+              <i
+                class="ri-heart-3-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+            </div>
+          </div>
+          <hr class="-mt-50">
+          <div class="m-3">
+            <div class="flex justify-between">
+              <p class="text-sm text-[#9F9F9F]">Nightwear</p>
+              <span>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+              </span>
+            </div>
+            <p
+              class="text-sm text-start tracking-widest my-3 hover:text-indigo-600 transition-all duration-100 cursor-pointer">
+              Nightsuit for Women</p>
+            <p class="text-start font-semibold">$12.00 <span
+                class="font-normal line-through text-sm text-slate-500">&nbsp;$18.00</span></p>
+            <div class="flex justify-between my-3">
+              <div class="flex gap-4">
+                <span
+                  class="bg-[#8b8f7d] hover:bg-[#72746c] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                <span
+                  class="bg-[#a6f3a5] hover:bg-[#94eb92] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+              </div>
+              <div class="flex gap-3">
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer text-center text-[#bebdbd]">M</span>
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">L</span>
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">XL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-5 overflow-hidden ">
+        <div class="border border-slate-[150] rounded w-60 relative product-card">
+          <div class="bg-[#F7F7F8] border border-slate-[150] m-3">
+            <p class="bg-[#7D76FF] text-white font-medium w-1/2">Trending</p>
+            <img src="./assets/img/30.jpg" alt="girl" class="rounded visible  main_image ">
+            <img src="./assets/img/29.jpg" alt="girl" class="rounded hidden hover_image">
+          </div>
+          <div class="icon hidden absolute">
+            <div class="flex justify-center align-middle gap-0.5">
+              <i
+                class="ri-eye-line bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+              <i
+                class="ri-file-copy-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+              <i
+                class="ri-shopping-cart-line  bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+              <i
+                class="ri-heart-3-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+            </div>
+          </div>
+          <hr class="-mt-50">
+          <div class="m-3">
+            <div class="flex justify-between">
+              <p class="text-sm text-[#9F9F9F]">Mens Tshirt</p>
+              <span>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill  font-medium"></i>
+              </span>
+            </div>
+            <p
+              class="text-sm text-start tracking-widest my-3 hover:text-indigo-600 transition-all duration-100 cursor-pointer">
+              Black Tshirt for Men</p>
+            <p class="font-semibold text-start">$11.00 <span
+                class="font-normal line-through text-sm text-slate-500 ">&nbsp;$22.00</span></p>
+            <div class="flex justify-between my-3">
+              <div class="flex gap-4">
+                <span
+                  class="bg-[#4d87b0] hover:bg-[#40719c] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                <span
+                  class="bg-[#232222] hover:bg-[#050505] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+              </div>
+              <div class="flex gap-3">
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer text-center text-[#bebdbd]">M</span>
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">L</span>
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">XL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-5 overflow-hidden ">
+        <div class="border border-slate-[150] rounded w-60 relative product-card">
+          <div class="bg-[#F7F7F8] border border-slate-[150] m-3">
+            <p class="bg-[#ff6262] text-white font-medium w-1/2">30% Sale</p>
+            <img src="./assets/img/26.jpg" alt="girl" class="rounded visible  main_image ">
+            <img src="./assets/img/27.jpg" alt="girl" class="rounded hidden hover_image">
+          </div>
+          <div class="icon hidden absolute">
+            <div class="flex justify-center align-middle gap-0.5">
+              <i
+                class="ri-eye-line bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+              <i
+                class="ri-file-copy-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+              <i
+                class="ri-shopping-cart-line  bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+              <i
+                class="ri-heart-3-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+            </div>
+          </div>
+          <hr class="-mt-50">
+          <div class="m-3">
+            <div class="flex justify-between">
+              <p class="text-sm text-[#9F9F9F]">Kids Top</p>
+              <span>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill  font-medium"></i>
+              </span>
+            </div>
+            <p
+              class="text-sm text-start tracking-widest my-3 hover:text-indigo-600 transition-all duration-100 cursor-pointer">
+              Kids Sweatshirt</p>
+            <p class="text-start font-semibold">$10.00 <span
+                class="font-normal text-slate-500 line-through text-sm ">&nbsp;$15.00</span></p>
+            <div class="flex justify-between my-3">
+              <div class="flex gap-4">
+                <span
+                  class="bg-[#ef4e4e] hover:bg-[#cf4141] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                <span
+                  class="bg-[#eb48d2] hover:bg-[#b1359e] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+              </div>
+              <div class="flex gap-3">
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer text-center text-[#bebdbd]">M</span>
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">L</span>
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">XL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-5 overflow-hidden ">
+        <div class="border border-slate-[150] rounded w-60 relative product-card">
+          <div class="bg-[#F7F7F8] border border-slate-[150] m-3">
+            <p class="bg-[#7D76FF] text-white font-medium w-1/2">Trending</p>
+            <img src="./assets/img/51.jpg" alt="girl" class="rounded visible  main_image ">
+            <img src="./assets/img/52.jpg" alt="girl" class="rounded hidden hover_image">
+          </div>
+          <div class="icon hidden absolute">
+            <div class="flex justify-center align-middle gap-0.5">
+              <i
+                class="ri-eye-line bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+              <i
+                class="ri-file-copy-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+              <i
+                class="ri-shopping-cart-line  bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+              <i
+                class="ri-heart-3-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+            </div>
+          </div>
+          <hr class="-mt-50">
+          <div class="m-3">
+            <div class="flex justify-between">
+              <p class="text-sm text-[#9F9F9F]">Mens Tshirt</p>
+              <span>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill  font-medium"></i>
+              </span>
+            </div>
+            <p
+              class="text-sm text-start tracking-widest my-3 hover:text-indigo-600 transition-all duration-100 cursor-pointer">
+              Sweatshirt for Men</p>
+            <p class="font-semibold text-start">$11.00 <span
+                class="font-normal line-through text-sm text-slate-500 ">&nbsp;$22.00</span></p>
+            <div class="flex justify-between my-3">
+              <div class="flex gap-4">
+                <span
+                  class="bg-[#185f33] hover:bg-[#0e381e] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                <span
+                  class="bg-[#335191] hover:bg-[#1d315b] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+              </div>
+              <div class="flex gap-3">
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer text-center text-[#bebdbd]">M</span>
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">L</span>
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">XL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-5 overflow-hidden ">
+        <div class="border border-slate-[150] rounded w-60 relative product-card">
+          <div class="bg-[#F7F7F8] border border-slate-[150] m-3">
+            <p class="bg-[#ff6262] text-white font-medium w-1/2">30% Sale</p>
+            <img src="./assets/img/56.jpg" alt="girl" class="rounded visible  main_image ">
+            <img src="./assets/img/57.jpg" alt="girl" class="rounded hidden hover_image">
+          </div>
+          <div class="icon hidden absolute">
+            <div class="flex justify-center align-middle gap-0.5">
+              <i
+                class="ri-eye-line bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+              <i
+                class="ri-file-copy-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+              <i
+                class="ri-shopping-cart-line  bg-white border rounded px-1.5 py-0.5 hover:bg-indigo-600 hover:text-white cursor-pointer"></i>
+              <i
+                class="ri-heart-3-line  bg-white border rounded px-1.5 py-0.5  hover:bg-indigo-600 hover:text-white  cursor-pointer"></i>
+            </div>
+          </div>
+          <hr class="-mt-50">
+          <div class="m-3">
+            <div class="flex justify-between">
+              <p class="text-sm text-[#9F9F9F]">Kids Top</p>
+              <span>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill text-[#fd575d] font-medium"></i>
+                <i class="ri-star-line fill  font-medium"></i>
+              </span>
+            </div>
+            <p
+              class="text-sm text-start tracking-widest my-3 hover:text-indigo-600 transition-all duration-100 cursor-pointer">
+              Girls Dress</p>
+            <p class="text-start font-semibold">$10.00 <span
+                class="font-normal text-slate-500 line-through text-sm ">&nbsp;$15.00</span></p>
+            <div class="flex justify-between my-3">
+              <div class="flex gap-4">
+                <span
+                  class="bg-[#fd9088] hover:bg-[#dd7f78] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+                <span
+                  class="bg-[#fff582] hover:bg-[#ede26a] w-5 h-5 rounded outline outline-1 outline-[#B2B2B2] outline-offset-2 cursor-pointer"></span>
+              </div>
+              <div class="flex gap-3">
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer text-center text-[#bebdbd]">M</span>
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">L</span>
+                <span
+                  class="bg-[#F2F2F2] w-5 h-5 rounded hover:outline outline-1 outline-gray-950 outline-offset-1 cursor-pointer  text-center text-[#bebdbd]">XL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- Top Collection section ends -->
+  <!-- Blog Section starts -->
+  <section class="px-36 my-24">
+    <h2 class="text-center text-3xl tracking-wide font-semibold mb-1">Latest News</h2>
+    <p class="text-center  text-xl mt-6 text-gray-500">Subscribe to our news channel for latest fashion hacks, style
+      launches!<br>
+      Read the fashion stories shared by our valuable customers!
+    </p>
+    <div class="new flex  mt-8">
+      <div class="blog me-5 border rounded-md">
+        <div class="blog_content">
+          <div class="blog_image relative">
+            <img src="./assets/img/4 (1).jpg" alt="blog1" class="w-auto rounded-md">
+            <div class="blog_date text-center">
+              <span class=" text-white text-2xl font-bold">10<br><code class="text-xl font-normal">Oct</code></span>
+            </div>
+          </div>
+        </div>
+        <p class="text-gray-500 text-[18px] py-4 px-5">By Admin | Fashion</p>
+        <p class="text-2xl font-semibold py-2 px-5">Latest fashion hacks, style launches 
+          <br> and trending designs
+          </p>
+          <p class="mb-6 px-5 text-xl text-indigo-600 font-medium cursor-pointer hover:text-gray-400">Read More &nbsp;
+            <i class="ri-arrow-right-line"></i>
+          </p>
+      </div>
+  
+      <div class="blog me-5 border rounded-md">
+        <div class="blog_content">
+          <div class="blog_image relative">
+            <img src="./assets/img/5 (1).jpg" alt="blog1" class="w-auto rounded-md">
+            <div class="blog_date text-center">
+              <span class=" text-white text-2xl font-bold">10<br><code class="text-xl font-normal">Oct</code></span>
+            </div>
+          </div>
+        </div>
+        <p class="text-gray-500 text-[18px] py-4 px-5">By Admin | Fashion</p>
+        <p class="text-2xl font-semibold py-2 px-5">Latest fashion hacks, style launches 
+          <br> and trending designs
+          </p>
+          <p class=" mb-6 px-5 text-xl text-indigo-600 font-medium cursor-pointer hover:text-gray-400">Read More &nbsp;
+            <i class="ri-arrow-right-line"></i>
+          </p>
+      </div>
+      <div class="blog me-5 border rounded-md">
+        <div class="blog_content">
+          <div class="blog_image relative">
+            <img src="./assets/img/6 (1).jpg" alt="blog1" class="w-auto rounded-md">
+            <div class="blog_date text-center">
+              <span class=" text-white text-2xl font-bold">10<br><code class="text-xl font-normal">Oct</code></span>
+            </div>
+          </div>
+        </div>
+        <p class="text-gray-500 text-[18px] py-4 px-5">By Admin | Fashion</p>
+        <p class="text-2xl font-semibold py-2 px-5">Latest fashion hacks, style launches 
+          <br> and trending designs
+          </p>
+          <p class="mb-6 px-5 text-xl text-indigo-600 font-medium cursor-pointer hover:text-gray-400">Read More &nbsp;
+            <i class="ri-arrow-right-line"></i>
+          </p>
+      </div>
+    </div>
+   
+
+  </section>
+  <!-- Blog Section ends -->
+  <!-- Footer Section starts -->
+  <footer class="bg-[#F7F7F8]">
+    <div class="subscribe p-28 py-16">
+      <div class="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 desktop:grid-cols-4">
+        <img src="./assets/img/logofinal2.png" class="w-28 h-12" alt="">
+        <p class="text-[18px] tracking-wider text-gray-500 py-5">Carrot is the biggest market of <br>grocery products.
+          Get your daily needs from our store.</p>
+        <p class="text-[18px] tracking-wider text-gray-500 py-4">
+          <span><i class="ri-map-pin-line text-indigo-600 text-[25px]"></i></span>
+          &nbsp; 51 Green St.Huntington ohaio beach<br>&nbsp;&nbsp;&nbsp; &nbsp;ontario, NY 11746 KY 4783, USA.
+        </p>
+        <p class="text-[18px] tracking-wider text-gray-500 py-4 hover:text-indigo-600 cursor-pointer">
+          <span><i class="ri-mail-send-line text-indigo-600 text-[25px] cursor-default"></i></span>
+          &nbsp; example@email.com
+        </p>
+        <p class="text-[18px] tracking-wider text-gray-500 py-4 hover:text-indigo-600 cursor-pointer">
+          <span><i class="ri-phone-line text-indigo-600 text-[25px] cursor-default"></i></span>
+          &nbsp; +91 123 4567890
+        </p>
+      </div>
+      <div>
+        <p class="font-semibold text-xl pb-8">Company</p>
+        <p class="text-[18px] tracking-wider text-gray-500 py-4 hover:text-indigo-600 cursor-pointer">About Us</p>
+        <p class="text-[18px] tracking-wider text-gray-500 py-4 hover:text-indigo-600 cursor-pointer">Delivery
+          information</p>
+        <p class="text-[18px] tracking-wider text-gray-500 py-4 hover:text-indigo-600 cursor-pointer">Privacy Policy</p>
+        <p class="text-[18px] tracking-wider text-gray-500 py-4 hover:text-indigo-600 cursor-pointer">Terms & Conditions
+        </p>
+        <p class="text-[18px] tracking-wider text-gray-500 py-4 hover:text-indigo-600 cursor-pointer">Contact Us</p>
+        <p class="text-[18px] tracking-wider text-gray-500 py-4 hover:text-indigo-600 cursor-pointer">Support Center</p>
+      </div>
+      <div>
+        <p class="font-semibold text-xl pb-8">Category</p>
+        <p class="text-[18px] tracking-wider text-gray-500 py-4 hover:text-indigo-600 cursor-pointer">Fashion & Clothes
+        </p>
+        <p class="text-[18px] tracking-wider text-gray-500 py-4 hover:text-indigo-600 cursor-pointer">Bags & Luggage</p>
+        <p class="text-[18px] tracking-wider text-gray-500 py-4 hover:text-indigo-600 cursor-pointer">Fashion Jwellery
+        </p>
+        <p class="text-[18px] tracking-wider text-gray-500 py-4 hover:text-indigo-600 cursor-pointer">Mens Accessories
+        </p>
+        <p class="text-[18px] tracking-wider text-gray-500 py-4 hover:text-indigo-600 cursor-pointer">Kids Fashion</p>
+        <p class="text-[18px] tracking-wider text-gray-500 py-4 hover:text-indigo-600 cursor-pointer">Footwear</p>
+      </div>
+      <div>
+        <p class="font-semibold text-xl pb-8">Newsletter</p>
+        <p class="text-[18px] tracking-wider text-gray-500 py-4 ">Subscribe to get in touch</p>
+        <div class="icon1">
+          <input type="text" class="py-5 px-2 text-[18px] w-80 border border-gray-200" placeholder="Search Here">
+          <i class="ri-arrow-right-circle-fill cursor-pointer"></i>
+        </div>
+
+        <p class="text-[18px] tracking-wider text-gray-500 py-8 ">
+          <span>
+            <i
+              class="ri-facebook-line text-2xl text-black bg-white border rounded-lg px-3 py-3 hover:text-indigo-600 cursor-pointer"></i>
+            <i
+              class="ri-twitter-x-line text-2xl text-black bg-white border rounded-lg px-3 py-3 hover:text-indigo-600 cursor-pointer"></i>
+            <i
+              class="ri-dribbble-line text-2xl text-black bg-white border rounded-lg px-3 py-3 hover:text-indigo-600 cursor-pointer"></i>
+            <i
+              class="ri-instagram-line text-2xl text-black bg-white border rounded-lg px-3 py-3 hover:text-indigo-600 cursor-pointer"></i>
+          </span>
+        <div class="subscribe">
+          <a href="#" class="app-img ">
+            <img src="./assets/img/android.png" class="w-44 h-16 rounded-lg  me-4" alt="android">
+          </a>
+          <a href="#" class="app-img">
+            <img src="./assets/img/apple.png" class="w-44 h-16 rounded-lg" alt="apple">
+          </a>
+        </div>
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="subscribe p-28 py-4">
+      <div>
+        <p class="text-lg tracking-wider"><span><i class="ri-copyright-line"></i></span> 2024 <span
+            class="text-indigo-600 cursor-pointer">Carrot</span>, All rights reserved</p>
+      </div>
+      <div>
+        <img src="./assets/img/payment.png" alt="payment" class="h-10">
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section ends -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script src="./assets/js/script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
